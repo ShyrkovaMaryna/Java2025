@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 .idea/
 *.iml
+.idea/vcs.xml
 
 ### Eclipse ###
 .apt_generated

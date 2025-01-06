@@ -10,7 +10,7 @@ public class Main {
     }
 
     public static String[] getData(){
-        return new String[] {"Tom", "555 123-8596"};
+        return new String[] {"Tom", "555-123-8596"};
     }
 
     public static Customer getCustomer(String[] data){
