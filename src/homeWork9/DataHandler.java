@@ -1,8 +1,8 @@
 package homeWork9;
 
-public class DataHandler<T> {
+public class DataHandler {
 
-         String handleData(T[] items) {
+    public <T> String handleData(T[] items) {
             StringBuilder sb = new StringBuilder();
             int count = 0;
 
