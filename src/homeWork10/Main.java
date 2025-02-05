@@ -8,7 +8,7 @@ package homeWork10;
             FileHandler handler = new FileHandler();
             String fileName = "myfile";
             String fileContent = "My very important information.";
-            String result = handler.writeFile(fileName, fileContent);
+            String result = handler.writeFile(fileContent, fileName);
             String content = handler.readFile(BASE_PATH + fileName + ".txt");
             getOutput("RESULT: " + result);
             getOutput("FILE CONTENT: " + content);
