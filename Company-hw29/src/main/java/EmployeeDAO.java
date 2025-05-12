@@ -47,13 +47,13 @@ public class EmployeeDAO {
         String sql = "SELECT * FROM employees";
         try (Connection connection = DatabaseConnector.connect();
              PreparedStatement preparedStatement = connection.prepareStatement(sql);
-             ResultSet rs = preparedStatement.executeQuery()) {
-            while (rs.next()) {
-                System.out.println("ID: " + rs.getInt("id") +
-                        ", Name: " + rs.getString("name") +
-                        ", Age: " + rs.getInt("age") +
-                        ", Position: " + rs.getString("position") +
-                        ", Salary: " + rs.getFloat("salary"));
+             ResultSet result = preparedStatement.executeQuery()) {
+            while (result.next()) {
+                System.out.println("ID: " + result.getInt("id") +
+                        ", Name: " + result.getString("name") +
+                        ", Age: " + result.getInt("age") +
+                        ", Position: " + result.getString("position") +
+                        ", Salary: " + result.getFloat("salary"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
